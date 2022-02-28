@@ -7,11 +7,10 @@
 }
 
 html body {
-    
+    background-color: rgb(143,188,143);
 }
 
 h1 a {
-    
     text-decoration: none;
 }
 
