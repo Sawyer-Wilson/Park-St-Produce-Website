@@ -6,12 +6,20 @@
     margin: 0;
 }
 
+html {
+    height: 100%;
+}
+
 html body {
     background-color: rgb(143,188,143);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 a {
     text-decoration: none;
+    color: black;
 }
 
 header {
@@ -51,6 +59,14 @@ ul li {
 
 ul li:hover {
     box-shadow: inset 0px -10px #4a3523;
+}
+
+footer {
+    min-height: 125px;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #hamburger-icon {
