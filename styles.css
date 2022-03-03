@@ -187,7 +187,7 @@ footer {
 #body {
     margin: 10px;
     border-radius: 5px;
-    background-image: linear-gradient(rgb(225, 255, 225), darkgreen);
+    background-image: linear-gradient(rgb(225, 255, 225), orange);
     text-align: center;
     padding: 30px;
 }
