@@ -6,6 +6,66 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel='stylesheet' href='styles.css' type='text/css'/> 
         <title>Farmers Market</title>
+        <style>
+            h2 {
+                margin: 25px;
+            }
+
+            h3 {
+                margin-bottom: 10px;
+            }
+
+            p {
+                line-height: 1.4;
+            }
+            
+            a {
+                text-decoration: none;
+                color: darkgreen;
+            }
+
+            a:hover {
+                color: rgb(125, 170, 35);
+            }
+
+            #content-wrapper {
+                display: flex;
+                margin: 15px;
+            }
+
+            .block {
+                width: 50%;
+                margin: 25px;
+                padding: 40px;
+                border-radius: 5px;
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+
+            .hero-image {
+                background-image: url("photos/joshua-leong-TkixT1WOr5w-unsplash.jpeg");
+            }
+
+            @media (max-width: 1000px) {
+                #content-wrapper {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .block {
+                    width: 75%;
+                }
+            }
+
+            @media (max-width: 500px) {
+                .block {
+                    width: 100%;
+                    padding: 15px;
+                }
+                h3 {
+                    margin-bottom: 0px;
+                }
+            }
+
+        </style>
     </head>
     <body>
         <header>
@@ -37,7 +97,30 @@
         </header>
         
         <main>
-            <h2>Get Involved</h2>
+            
+            <div class="hero-image">
+                <div class="hero-text">
+                    <h2>Get Involved</h2>
+                </div>
+            </div>
+            <div id="content-wrapper">
+                <div class="block">
+                    <h3>Become A Volunteer!</h3>
+                    <p>Volunteers are the heart of Park St. Produce and are the key to our success. As a community centered farmers market, we rely on the support from locals to staff many events and aid in the setting and cleaning up of our weekly market. As a volunteer, you get early access and priority when signing up for our special events. You can register to volunteer for an upcoming event by filling out this <a href="contact-us.html">form</a>. </p>
+                </div>
+
+                <div class="block">
+                    <h3>Donate!</h3>
+                    <p>You can make a big difference in your local community through a donation! Donations can be made electronically using either Venmo or Paypal (@ParkStProduce) or by mailing a check to our offices located at 75 State St, Boston, MA 02109. For information regarding claiming a donation as tax deductible, contact fundraising@parkstproduce.com</p>
+                </div>
+
+                <div class="block">
+                    <h3>Become A Vender!</h3>
+                    <p>Park St. Produce has a wide range of venders but we are always looking for more local businesses to promote! For more information on leasing a space at Park St. Produce contact support@parkstproduce.com</p>
+                </div>
+            </div>
+
+            
         </main>
         
         <footer>
