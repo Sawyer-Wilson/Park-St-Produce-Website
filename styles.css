@@ -314,7 +314,7 @@ h4 {
     margin-bottom: 10px;
 }
 
-.container {
+.exp-container {
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -326,14 +326,14 @@ h4 {
     background-image: linear-gradient(rgb(225, 255, 225), rgb(253,253,150));
 }
 
-.content {
+.exp-content {
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     margin: 20px;
     padding: 15px;
 }
 
-.content h2 {
+.exp-content h2 {
     color: darkgreen;
     margin-bottom: 10px;
 }
