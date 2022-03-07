@@ -291,3 +291,40 @@ h4 {
     color: darkgreen;
     background-color:rgb(225, 255, 225);
 }
+
+#experience {
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+#experience h2 {
+    color: darkgreen;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-image: linear-gradient(rgb(225, 255, 225), rgb(253,253,150));
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 15px;
+}
+
+.content h2 {
+    color: darkgreen;
+    margin-bottom: 10px;
+}
