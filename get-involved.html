@@ -7,32 +7,23 @@
         <link rel='stylesheet' href='styles.css' type='text/css'/> 
         <title>Farmers Market</title>
         <style>
-            h2 {
-                margin: 25px;
-            }
-
             h3 {
                 margin-bottom: 10px;
             }
-
             p {
                 line-height: 1.4;
             }
-            
             a {
                 text-decoration: none;
                 color: darkgreen;
             }
-
             a:hover {
                 color: rgb(125, 170, 35);
             }
-
             #content-wrapper {
                 display: flex;
                 margin: 15px;
             }
-
             .block {
                 width: 50%;
                 margin: 25px;
@@ -40,11 +31,23 @@
                 border-radius: 5px;
                 background-color: rgba(0, 0, 0, 0.2);
             }
-
-            .hero-image {
-                background-image: url("photos/joshua-leong-TkixT1WOr5w-unsplash.jpeg");
+            #hero-image {
+                background-image: url("photos/get-involved.jpeg");
+                height: 400px;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
-
+            h2 {
+                font-size: 35px;
+                color: white;
+                width: fit-content;
+                padding: 25px;
+                background-color: rgba(100, 100, 100, 0.8);
+                border-radius: 5px;
+            }
             @media (max-width: 1000px) {
                 #content-wrapper {
                     flex-direction: column;
@@ -54,7 +57,6 @@
                     width: 75%;
                 }
             }
-
             @media (max-width: 500px) {
                 .block {
                     width: 100%;
@@ -63,8 +65,11 @@
                 h3 {
                     margin-bottom: 0px;
                 }
+                h2 {
+                    padding: 15px;
+                    font-size: 28px;
+                }
             }
-
         </style>
     </head>
     <body>
@@ -97,11 +102,8 @@
         </header>
         
         <main>
-            
-            <div class="hero-image">
-                <div class="hero-text">
-                    <h2>Get Involved</h2>
-                </div>
+            <div id="hero-image">
+                <h2>Get Involved</h2>
             </div>
             <div id="content-wrapper">
                 <div class="block">
@@ -111,12 +113,12 @@
 
                 <div class="block">
                     <h3>Donate!</h3>
-                    <p>You can make a big difference in your local community through a donation! Donations can be made electronically using either Venmo or Paypal (@ParkStProduce) or by mailing a check to our offices located at 75 State St, Boston, MA 02109. For information regarding claiming a donation as tax deductible, contact fundraising@parkstproduce.com</p>
+                    <p>You can make a big difference in your local community through a donation! Donations can be made electronically using either Venmo or Paypal (@ParkStProduce) or by mailing a check to our offices located at 75 State St, Boston, MA 02109. For information regarding claiming a donation as tax deductible, contact fundraising@parkstproduce.com.</p>
                 </div>
 
                 <div class="block">
                     <h3>Become A Vender!</h3>
-                    <p>Park St. Produce has a wide range of venders but we are always looking for more local businesses to promote! For more information on leasing a space at Park St. Produce contact support@parkstproduce.com</p>
+                    <p>Park St. Produce has a wide range of venders but we are always looking for more local businesses to promote! For more information on leasing a space, contact support@parkstproduce.com. Artists who are looking to perform at a Park Street event can also use this email to get in contact.</p>
                 </div>
             </div>
 
