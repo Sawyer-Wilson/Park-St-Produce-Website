@@ -54,7 +54,7 @@ header {
     z-index: 7;
 }
 
-ul {
+header ul {
     list-style: none;
     height: 100%;
     
@@ -63,24 +63,24 @@ ul {
     justify-content: space-around;
 }
 
-ul a {
+header ul a {
     font-size: 16px;
     color: darkgreen;
     text-decoration: none;
 }
 
-ul li {
+header ul li {
     padding-top: 24px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 24px;
 }
 
-ul li a {
+header ul li a {
     transition: color 300ms;
 }
 
-ul li a:hover {
+header ul li a:hover {
     color: yellowgreen;
 }
 
@@ -296,7 +296,7 @@ h4 {
     padding: 200px;
     background-size: cover;
     background-position: center;
-    background-image: url("photos/experience.jpeg");
+    background-image: url("photos/experience.jpg");
     z-index: -1;
 }
 
