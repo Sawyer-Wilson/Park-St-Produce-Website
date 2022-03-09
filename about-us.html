@@ -18,19 +18,32 @@
             }
 
             .container {
-                display: flex;
-                padding: 20px;
+                display: grid;
+                height:  200px;
+                grid-template-columns: 100%;
+                grid-row: repeat(6, 1fr); 
+                width: 100%; 
             }
 
             .item {
               background: rgba(0,0,0,0.2);
-              flex-basis: 400px;
-              height: 600px;
               margin: 5px;
               padding: 10px; 
               text-align: center;
               color: black; 
             }
+            
+            .p1 {
+
+            }
+            .p2 { 
+                grid-row:  2/4;
+             }
+             .p3 {
+                grid-row: span 2/7;
+             }
+            
+            
             h3 {
                 /*border: 2px solid; */
                 margin: 20px;
