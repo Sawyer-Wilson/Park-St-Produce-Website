@@ -100,15 +100,15 @@
           <br>
           <!-- contact form div --> 
           <div class="container">
-          <form onsubmit="return validate()" name="contact-form" method="post">
+          <form onsubmit="return validate()" name="data" method="post" action="/action_page.php">
           <label for="fname">First Name</label> 
-          <input type="text" id="fname" name="text" placeholder="Your name..">
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
           <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="text" placeholder="Your last name..">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
           <label for="email">Email</label>
-          <input type="text" id="email" name="text" placeholder="Your email..">
+          <input type="text" id="email" name="email" placeholder="Your email..">
 
           <label for="state">State</label>
           <select id="state" name="state">
@@ -134,19 +134,17 @@
         <script language="javascript">
             function toggleMobileMenu(menu) {
                 menu.classList.toggle('open');
-            }
-
-            function validate() {    
-              var emptyField = false;    
-              for (var i = 0; i < 3; i++) {
-                if (document.forms["contact-form"][i].value == "")
-                  emptyField = true;
-              }
-              if (emptyField == true) {
-                alert("All fields are required.");
-              }
-              return false;
             }  
+            
+            function validate() {
+                if (document.data.type.value == "") {
+                    window.alert("All fields are required");
+                }
+                
+                document.data.type.focus(); // put cursor in text box
+                document.data.type.select();
+                return false;
+            }
        </script>
     </body>
 </html>
