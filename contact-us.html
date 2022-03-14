@@ -109,7 +109,7 @@
                     <label for="subject">Subject</label>
                     <textarea id="subject" name="subject" placeholder="Write something.. we'd love to hear from you!" style="height:200px"></textarea>
 
-                    <input type="submit" value="Submit" onclick="submitForm()">
+                    <input type="submit" value="Submit">
                 </form>
             </div>
 
@@ -138,8 +138,9 @@
                 }
                 if (emptyField == true) {
                     alert("All fields are required.");
+                } else {
+                    submitForm();
                 }
-                return false;
             }  
             
             function submitForm() {
