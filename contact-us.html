@@ -6,141 +6,121 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel='stylesheet' href='styles.css' type='text/css'/> 
         <title>Farmers Market</title>
-        
         <style> 
-            /*contact form styling*/
-            /*body {font-family: Arial, Helvetica, sans-serif;}*/
-            * {box-sizing: border-box;}
-
-
             input[type=text], select, textarea {
-              width: 100%;
-              padding: 12px;
-              border: 1px solid #ccc;
-              border-radius: 4px;
-              box-sizing: border-box;
-              margin-top: 6px;
-              margin-bottom: 16px;
-              resize: vertical;
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
             }
-
             input[type=submit] {
-              background-color: #262626;
-              color: white;
-              padding: 12px 20px;
-              border: none;
-              border-radius: 4px;
-              cursor: pointer;
+                background-color: #262626;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
             }
-
             input[type=submit]:hover {
-              background-color: #45a049;
+                background-color: #45a049;
             }
-
             .container {
-              border-radius: 5px;
-              background-color: rgba(0,0,0,0.2);
-              padding: 20px;
-              width: 100%;
+                border-radius: 5px;
+                background-color: rgba(0,0,0,0.2);
+                padding: 20px;
+                width: 100%;
             }
-
             label {
-              color: black;
+                color: black;
             }
-
             h2 {
                 text-align: center;
                 position: releative;
-                padding-top: 70px;
+                margin: 70px 0px 40px 0px;
                 font-size: 40px;
                 color: darkgreen
             }
-            p {
-              text-align: center;  
-              font-weight: bold;
-              color: darkgreen
+            #contact-info {
+                margin: 80px 0px;
             }
-            
+            #contact-info p {
+                text-align: center;  
+                font-weight: bold;
+                color: darkgreen;
+                margin: 10px 0px;
+            }
         </style> 
     </head>
     <body>
-      <header>
-        <h1><a href="index.html">PARK ST. PRODUCE</a></h1>
-        <nav>
-            <ul class=main-nav>
-                <li><a href="the-experience.html">The Experience</a></li>
-                <li><a href="venders.html">Venders</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="get-involved.html">Get Involved</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
-        </nav>
-        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-           <div class="bar1"></div>
-           <div class="bar2"></div>
-           <div class="bar3"></div>
-           <ul class="mobile-menu">
-                <li id="home" ><a href="index.html">Home</a></li>
-                <li id="the-experience" ><a href="the-experience.html">The Experience</a></li>
-                <li id="venders" ><a href="venders.html">Venders</a></li>
-                <li id="events" ><a href="events.html">Events</a></li>
-                <li id="get-involved" ><a href="get-involved.html">Get Involved</a></li>
-                <li id="about-us" ><a href="about-us.html">About Us</a></li>
-                <li id="contact-us" ><a href="contact-us.html">Contact Us</a></li>
-            </ul>
-        </div>
-      </header>
+        <header>
+            <h1><a href="index.html">PARK ST. PRODUCE</a></h1>
+            <nav>
+                <ul class=main-nav>
+                    <li><a href="the-experience.html">The Experience</a></li>
+                    <li><a href="venders.html">Venders</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                    <li id="home" ><a href="index.html">Home</a></li>
+                    <li id="the-experience" ><a href="the-experience.html">The Experience</a></li>
+                    <li id="venders" ><a href="venders.html">Venders</a></li>
+                    <li id="events" ><a href="events.html">Events</a></li>
+                    <li id="get-involved" ><a href="get-involved.html">Get Involved</a></li>
+                    <li id="about-us" ><a href="about-us.html">About Us</a></li>
+                    <li id="contact-us" ><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </header>
         
         <main>
-            <br>
             <h2>Contact us!</h2>
+
+            <!-- contact form --> 
+            <div class="container">
+                <form onsubmit="validate()" name="contact-form" method="post">
+                    <label for="fname">First Name</label> 
+                    <input type="text" id="fname" name="text" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="text" placeholder="Your last name..">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="text" placeholder="Your email..">
+
+                    <label for="state">State</label>
+                    <select id="state" name="state">
+                    <!-- <option value="select-here">Select Here</option> -->
+                        <option value="boston">Boston</option>
+                        <option value="other">other</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.. we'd love to hear from you!" style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <div id="contact-info">
+                <p>Address: 75 State St, Boston, MA 02109</p> 
+                <p>Email: fundraising@parkstproduce.com</p> 
+                <p>Phone number: 617-922-7113</p> 
+                <p>Business hours: 11 - 6pm Saturdays and Sundays</p>
+            </div>
         </main>
-           
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-        
-        
-            <br><br>
-          <!-- contact form div --> 
-          <div class="container">
-          <form onsubmit="return validate()" name="contact-form" method="post">
-          <label for="fname">First Name</label> 
-          <input type="text" id="fname" name="text" placeholder="Your name..">
 
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="text" placeholder="Your last name..">
-
-          <label for="email">Email</label>
-          <input type="text" id="email" name="text" placeholder="Your email..">
-
-          <label for="state">State</label>
-          <select id="state" name="state">
-            <!-- <option value="select-here">Select Here</option> -->
-             <option value="boston">Boston</option>
-             <option value="other">other</option>
-          </select>
-
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.. we'd love to hear from you!" style="height:200px"></textarea>
-
-          <input type="submit" value="Submit">
-        </form>
-      </div>
-      
-        <br><br><br><br>
-        <div class =  contactinfo>
-            <p> Address: 75 State St, Boston, MA 02109 </p> 
-            <p> Email: fundraising@parkstproduce.com </p> 
-            <p> Phone number: 617-922-7113 </p> 
-            <p> Business hours: 11 - 6pm Saturdays and Sundays </p>
-          </div>
-         <br><br><br><br>
-        
         <footer>
             Copyright &copy; 2022 Farmers Market
         </footer>
@@ -151,17 +131,16 @@
             }
 
             function validate() {    
-              var emptyField = false;    
-              for (var i = 0; i < 3; i++) {
-                if (document.forms["contact-form"][i].value == "")
-                  emptyField = true;
-              }
-              if (emptyField == true) {
-                alert("All fields are required.");
-              }
-              return false;
+                var emptyField = false;    
+                for (var i = 0; i < 3; i++) {
+                    if (document.forms["contact-form"][i].value == "")
+                        emptyField = true;
+                }
+                if (emptyField == true) {
+                    alert("All fields are required.");
+                }
+                return false;
             }  
        </script>
-    
     </body>
 </html>

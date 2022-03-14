@@ -7,211 +7,153 @@
         <link rel="stylesheet" href="styles.css" type="text/css"/> 
         <title>Farmers Market</title>
 		<style>
- 
-        /* Styling the body */
-        body {
-            margin: 0;
-            padding: 0;
-        }
-          
-        /* Styling section, giving background
-            image and dimensions */
-        section {
-            width: 100%;
-            height: 100vh;
-	  background-image:url("photos/bgevent.jpg");
-            background-size: cover;
-			}
-          
-        /* Styling the left floating section */
-        section .leftBox {
-            width: 50%;
-            height: 100%;
-            float: left;
-            padding: 50px;
-			box-sizing: border-box;
-        }
-          
-        /* Styling the background of
-            left floating section */
-        section .leftBox .content {
-            color: #fff;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 40px;
-            transition: .5s;
-        }
-          
-        /* Styling the hover effect 
-            of left floating section */
-        section .leftBox .content:hover {
-            background: #126F1D;
-        }
-          
-        /* Styling the header of left
-            floating section */
-        section .leftBox .content h1 {
-            margin: 0;
-            padding: 0;
-            font-size: 50px;
-			}
-			section .leftBox .content p {
-            margin: 10px 0 0;
-            padding: 0;
-        }
-          
-        /* Styling the three events section */
-        section .events {
-            position: relative;
-            width: 50%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            float: right;
-            box-sizing: border-box;
-        }
-          
-        /* Styling the links of
-        the events section */
-        section .events ul {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            margin: 0;
-            padding: 40px;
-			display: block;
-            box-sizing: border-box;
-			}
-			/* Styling the lists of the event section */
-        section .events ul li {
-            list-style: none;
-	    display: inline;
-            box-sizing: border-box;
-            height: 200px;
-            margin: 15px 0;
-        }
-          
-        /* Styling the time class of events section */
-        section .events ul li .time1 {
-            position: relative;
-            background: #262626;
-            box-sizing: border-box;
-            width: 100px;
-            height: 30%;
-            float: left;
-            text-align: center;
-            transition: .5s;
-	    margin: 15px 0;
-        }
-			 /* Styling the hover effect
-            of events section */
-        section .events ul li:hover .time1 {
-            background:#126F1D;
-        }
-          
-        /* Styling the header of time
-            class of events section */
-        section .events ul li .time1 h2 {
-            position: absolute;
-            margin: 0;
-            padding: 0;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #fff;
-            font-size: 60px;
-            line-height: 30px;
-        }
-          
-        /* Styling the texts of time
-        class of events section */
-        section .events ul li .time1 h2 span {
-            font-size: 30px;
-        }
-			
-			  /* the white box */
-        section .events ul li .details {
-	    position: relative;
-            padding: 50px;
-            background:white;
-            box-sizing: border-box;
-            width: 70%;
-            height: 30%;
-            float: left;
-	    margin-bottom: 10px;
-        }
-	section .events ul li .time1:hover {
-		 background: #126F1D;
-	}
-          
-        /* Styling the header of the
-        details class of events section */
-        section .events ul li .details h3 {
-         
-         margin: 15px 0;
-            padding: 0;
-            font-size: 22px;
-	    color:darkgreen;
-        }
-          
-		
-        @media(max-width:830px)
-	{
-		section 
-		{
-		height: 100%;
-		background-position: center;
-		}
-		
-		section .leftBox
-		{
-		 width: 100%;
-		 height: auto;
-		float: none;
-		padding:20px;
-		}
-		section .events
-		{
-		 height: auto;
-		 width: 100%;
-		 background:transparent;
-		 float: none;	
-		}
-		section .leftBox .content
-		{
-		 padding:20px;
-		}
-		section .leftBox .content h1
-		{
-		 font-size: 30px;
-		}
-		section .events ul
-		{
-			position: relative;
-			transform: translateY(0px);
-			padding: 0 20px 20px;
-		}
-		section .events ul li
-		{
-			height:auto;
-			background: rgba(0,0,0,.5);
-		}
-		section .events ul li .time
-		{
-			height:80px;
-			width:80px;
-			padding:0;
-		}
-		section .events ul li .time h2
-		{
-			font-size: 30px;
-			line-height: 24px;
-		}
-		section .events ul li .time h2 span
-		{
-			font-size: 20px;
-		}
-		
-        }
-	
+            main {
+                width: 100%;
+                height: 100vh;
+                background-image:url("photos/bgevent.jpg");
+                background-size: cover;
+            }
+            .leftBox {
+                width: 50%;
+                height: 100%;
+                float: left;
+                padding: 50px;
+                box-sizing: border-box;
+            }
+            .leftBox .content {
+                color: #fff;
+                background: rgba(0, 0, 0, 0.5);
+                padding: 40px;
+                transition: .5s;
+            }
+            .leftBox .content:hover {
+                background: #126F1D;
+            }
+            .leftBox .content h1 {
+                margin: 0;
+                padding: 0;
+                font-size: 50px;
+            }
+            .leftBox .content p {
+                margin: 10px 0 0;
+                padding: 0;
+            }
+            .events {
+                position: relative;
+                width: 50%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                float: right;
+                box-sizing: border-box;
+            }
+            .events ul {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                margin: 0;
+                padding: 40px;
+                display: block;
+                box-sizing: border-box;
+            }
+            .events ul li {
+                list-style: none;
+                display: inline;
+                box-sizing: border-box;
+                height: 200px;
+                margin: 15px 0;
+            }
+            .time1 {
+                position: relative;
+                background: #262626;
+                box-sizing: border-box;
+                width: 100px;
+                height: 30%;
+                float: left;
+                text-align: center;
+                transition: .5s;
+                margin: 15px 0;
+            }
+            .events ul li:hover .time1 {
+                background:#126F1D;
+            }
+            .time1 h2 {
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #fff;
+                font-size: 60px;
+                line-height: 30px;
+            }
+            .time1 h2 span {
+                font-size: 30px;
+            }
+            .details {
+                position: relative;
+                padding: 50px;
+                background:white;
+                box-sizing: border-box;
+                width: 70%;
+                height: 30%;
+                float: left;
+                margin-bottom: 10px;
+            }
+            .time1:hover {
+                background: #126F1D;
+            }
+            .details h3 {
+                margin: 15px 0;
+                padding: 0;
+                font-size: 22px;
+                color:darkgreen;
+            }
+            @media(max-width:830px) {
+                main {
+                    height: 100%;
+                    background-position: center;
+                }
+                .leftBox {
+                    width: 100%;
+                    height: auto;
+                    float: none;
+                    padding:20px;
+                }
+                .events {
+                    height: auto;
+                    width: 100%;
+                    background:transparent;
+                    float: none;	
+                }
+                .leftBox .content {
+                    padding:20px;
+                }
+                .leftBox .content h1 {
+                    font-size: 30px;
+                }
+                .events ul {
+                    position: relative;
+                    transform: translateY(0px);
+                    padding: 0 20px 20px;
+                }
+                .events ul li {
+                    height:auto;
+                    background: rgba(0,0,0,.5);
+                }
+                .time {
+                    height:80px;
+                    width:80px;
+                    padding:0;
+                }
+                .time h2 {
+                    font-size: 30px;
+                    line-height: 24px;
+                }
+                .time h2 span {
+                    font-size: 20px;
+                }
+            }
 		</style>
     </head>
     <body>
@@ -242,76 +184,47 @@
                 </ul>
             </div>
         </header>
-        
-      
-           
-			<section>
+
+        <main>
 			<div class="leftBox">
 				<div class="content">
-					<h1>
-					   Upcoming Events This Month!
-					</h1>
-					<p> Saturday's are for spending time with loved ones at the market!<br> Come visit us and enjoy live entertainment, furry friends, 
-                        <br> clothes, and lots of other local goodies. </p>
-				 </div>
+					<h1>Upcoming Events This Month!</h1>
+					<p> Saturday's are for spending time with loved ones at the market!<br> Come visit us and enjoy live entertainment, furry friends,<br> clothes, and lots of other local goodies.</p>
+				</div>
 			</div>
 	
-       		 <div class="events">
+       		<div class="events">
             	<ul>
                 	<li>
-               			 <div class="time1">
-                       		 <h2>
-                            12 <br><span>March</span>
-                        	</h2>
-                   		 </div>
-						
-                   		 <div class="details">
-                       		 <h3>
-                           Adoption Day! <br> Find Your Furry Friend 
-                        	</h3>
+               			<div class="time1">
+                       		<h2>12 <br><span>March</span></h2>
+                   		</div>
+                   		<div class="details">
+                       		<h3>Adoption Day! <br> Find Your Furry Friend</h3>
                     	</div>
-						
 				 		<div style="clear:both;"></div>
 					</li>
-					
 					<li>
-               			 <div class="time1">
-                       		 <h2> 19
-                             <br><span>March</span>
-                        	</h2>
-                   		 </div>
-						
-                   		 <div class="details">
-                       		 <h3>
-                           Jam Out With Us! <br>  Rusty Scott Quartet ft Tim Mayer
-                        	</h3>
+               			<div class="time1">
+                       		<h2>19 <br><span>March</span></h2>
+                   		</div>
+                   		<div class="details">
+                       	    <h3>Jam Out With Us!<br> Rusty Scott Quartet ft Tim Mayer</h3>
                     	</div>
-						
 				 		<div style="clear:both;"></div>
 					</li>
-					
 					<li>
-               			 <div class="time1">
-                       		 <h2>
-                            26<br><span>March</span>
-                        	</h2>
-                   		 </div>
-						
-                   		 <div class="details">
-                       		 <h3>
-                          Go Thrifting! <br> *Multiple Vendors Available
-                        	</h3>
+               			<div class="time1">
+                       		<h2>26<br><span>March</span></h2>
+                   		</div>
+                   		<div class="details">
+                       		<h3>Go Thrifting!<br> *Multiple Vendors Available</h3>
                     	</div>
-						
 				 		<div style="clear:both;"></div>
 					</li>
-					
-					
-               </ul>
-      	  </div>	
-				
-		</section>
-        
+                </ul>
+      	    </div>	
+        </main>
         
         <footer>
             Copyright &copy; 2022 Farmers Market

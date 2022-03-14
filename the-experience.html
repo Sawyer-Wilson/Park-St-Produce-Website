@@ -6,6 +6,71 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel='stylesheet' href='styles.css' type='text/css'/> 
         <title>Farmers Market</title>
+        <style>
+            #experience-image {
+                padding: 200px;
+                background-size: cover;
+                background-position: center;
+                background-image: url("photos/experience.jpg");
+                z-index: -1;
+            }
+            #experience-text {
+                font-size: 24px;
+                display: none;
+                color: white;
+                background-color: rgba(100, 100, 100, 0.8);
+                border-radius: 5px;
+                padding: 25px;
+                text-align: center;
+            }
+            #experience-text p {
+                font-size: 16px;
+                padding: 10px;
+            }
+            #alt-exp-text {
+                display: none;
+                padding-top: 25px;
+                padding-bottom: 10px;
+                padding-left: 40px;
+                padding-right: 40px;
+                text-align: center;
+            }
+            #alt-exp-text h2 {
+                color: darkgreen;
+                margin-bottom: 10px;
+            }
+            @media only screen and (max-width: 760px) {
+                #alt-exp-text {
+                    display: block;
+                }
+            }
+            @media only screen and (min-width: 760px) {
+                #experience-text {
+                    display: block;
+                }
+            }
+            .exp-container {
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                text-align: center;
+                background-image: linear-gradient(rgb(225, 255, 225), rgb(253,253,150));
+            }
+            .exp-content {
+                background-color: rgba(0, 0, 0, 0.2);
+                border-radius: 5px;
+                margin: 20px;
+                padding: 15px;
+            }
+            .exp-content h2 {
+                color: darkgreen;
+                margin-bottom: 10px;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -35,37 +100,41 @@
                 </ul>
             </div>
         </header>
-        <div id="experience-image">'
-            <div id="experience-text">
+
+        <main>
+            <div id="experience-image">
+                <div id="experience-text">
+                    <h2>The Experience</h2>
+                    <p>A walk through Park St. Produce is like no other! Below you will find what a typical day on Park Street might look like.</p>
+                </div>
+            </div>
+            <div id="alt-exp-text">
                 <h2>The Experience</h2>
-                <p>A walk through Park St. Produce is like no other! Below you will find what a typical day on Park Street might look like.</p>
+                <span>A walk through Park St. Produce is like no other! Below you will find what a typical day on Park Street might look like.</span>
             </div>
-        </div>
-        <div id="alt-exp-text">
-            <h2>The Experience</h2>
-            <span>A walk through Park St. Produce is like no other! Below you will find what a typical day on Park Street might look like.</span>
-        </div>
-        <div class="exp-container">
-            <div class="exp-content">
-                <h2>Vendors 👩‍🌾 and Products 🥦</h2>
-                <p>We partner with vendors from all corners of Massachusetts! Everyone who participates is extremely excited to share their passion, craft, and products with you. 
-                    On a typical day, you will find fresh seasonal produce (fruits, vegetables, and plants) from a variety of local farms, expertly baked goods from professional artisans, 
-                    a prime meat selection from local butchers, a variety of delicious deserts from local bakeries, and much more. Go check out the vendors page to see which vendors will be participating on a given week.
-                </p>
+            <div class="exp-container">
+                <div class="exp-content">
+                    <h2>Vendors 👩‍🌾 and Products 🥦</h2>
+                    <p>We partner with vendors from all corners of Massachusetts! Everyone who participates is extremely excited to share their passion, craft, and products with you. 
+                        On a typical day, you will find fresh seasonal produce (fruits, vegetables, and plants) from a variety of local farms, expertly baked goods from professional artisans, 
+                        a prime meat selection from local butchers, a variety of delicious deserts from local bakeries, and much more. Go check out the vendors page to see which vendors will be participating on a given week.
+                    </p>
+                </div>
+                <div class="exp-content">
+                    <h2>Live Music 🎶</h2>
+                    <p>Park St. Produce also honors local artists! We partner with bands and solo artists every other week to provide you with live music as you explore the market. Be sure to stop by and show your appreciation for their music; they always enjoy a crowd!</p>
+                </div>
+                <div class="exp-content">
+                    <h2>Child 👫 and Pet Friendly 🦮</h2>
+                    <p>Park St. Produce is child and pet friendly! Feel free to bring your children and pets along for the ride. We have play areas for the kids and plenty of space for you and your entire family to explore.</p>
+                </div>
+                <div class="exp-content">
+                    <h2>Community Oriented 🫂</h2>
+                    <p>You will also notice that Park St. Produce is extremely community oriented -for it is the community that fuels Park St. Produce. In addition to the farmers market itself, we typically have group activities for you and your friends and family to enjoy. Whether you decide to play cornhole, mega chess, or take pictures, we hope that you say hi to your neighbors!</p>
+                </div>
             </div>
-            <div class="exp-content">
-                <h2>Live Music 🎶</h2>
-                <p>Park St. Produce also honors local artists! We partner with bands and solo artists every other week to provide you with live music as you explore the market. Be sure to stop by and show your appreciation for their music; they always enjoy a crowd!</p>
-            </div>
-            <div class="exp-content">
-                <h2>Child 👫 and Pet Friendly 🦮</h2>
-                <p>Park St. Produce is child and pet friendly! Feel free to bring your children and pets along for the ride. We have play areas for the kids and plenty of space for you and your entire family to explore.</p>
-            </div>
-            <div class="exp-content">
-                <h2>Community Oriented 🫂</h2>
-                <p>You will also notice that Park St. Produce is extremely community oriented -for it is the community that fuels Park St. Produce. In addition to the farmers market itself, we typically have group activities for you and your friends and family to enjoy. Whether you decide to play cornhole, mega chess, or take pictures, we hope that you say hi to your neighbors!</p>
-            </div>
-        </div>
+        </main>
+
         <footer>
             Copyright &copy; 2022 Farmers Market
         </footer>

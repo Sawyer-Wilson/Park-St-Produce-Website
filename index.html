@@ -6,6 +6,56 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel='stylesheet' href='styles.css' type='text/css'/> 
         <title>Park Street Produce</title>
+        <style>
+            .hero-image {
+                padding: 200px;
+                background-size: cover;
+                background-position: center;
+                background-image: url("photos/homephoto.jpg");
+                z-index: -1;
+            }
+            .hero-text {
+                font-size: 24px;
+                display: none;
+                color: white;
+                text-align: center;
+                text-shadow: 10px 10px 7px #121212;
+            }
+            @media only screen and (min-width: 760px) {
+                .hero-text {
+                    display: block;
+                }
+            }
+            main {
+                margin: 10px;
+                border-radius: 5px;
+                text-align: center;
+                padding: 30px;
+                background-image: linear-gradient(rgb(225, 255, 225), orange);
+            }
+            #featured-vendors {
+                text-align: center;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                grid-template-columns: repeat(5, 1fr);
+                text-align: center;
+            }
+            #featured-vendors .vender {
+                border: 2px solid white;
+                border-radius: 5px;
+                box-shadow: 0 0 0 2px green;
+                padding: 10px;
+                margin: 10px;
+                background-color: green;
+                border-radius: 5px;
+                transition: all 0.5s ease;
+            }
+            #featured-vendors .vender:hover {
+                color: darkgreen;
+                background-color:rgb(225, 255, 225);
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -35,44 +85,46 @@
                 </ul>
             </div>
         </header>
+
         <div class="hero-image">
             <div class="hero-text">
                 <h2>Welcome to Park Street</h2>
                 <p>The Farmers Market Reinvented</p>
              </div>
         </div>
-        <div id="body">
+        <main>
             <h3>What is Park St. Produce?</h2>
             <p>Park St. Produce is the modern Farmers Market. Every other Sunday on Park Street in Boston, you will find an assortment of fresh, locally-sourced produce, baked goods, local and foreign cuisines, as well as live music! Featured vendors line the street offering up their best for you to try and buy. We hope you stop by sometime!</p>
             <h3 style="text-align: center; margin-top: 30px;">Featured Vendors</h2>
             <div id="featured-vendors">
-                <div id="vendor1">
+                <div class="vender">
                     <h4>Brigham Farm Stand & Greenhouses</h4>
                     <span>Fresh fruits, vegetables, flowers and cold drinks</span><br>
                     <span>Concord, MA</span>
                 </div>
-                <div id="vendor2">
+                <div class="vender">
                     <h4>Boston Honey Company</h4>
                     <span>Raw artisanal honey, maple syrup, candles, and body care products</span><br>
                     <span>Holliston, MA</span>
                 </div>
-                <div id="vendor3">
+                <div class="vender">
                     <h4>Crescent Ridge Dairy</h4>
                     <span>Award-winning ice cream and glass-bottled milk</span><br>
                     <span>Sharon, MA</span>
                 </div>
-                <div id="vendor4">
+                <div class="vender">
                     <h4>Bread Obsession</h4>
                     <span>A woman-owned and operated artisan bread company</span><br>
                     <span>Waltham, MA</span>
                 </div>
-                <div id="vendor5">
+                <div class="vender">
                     <h4>House Bear Brewing</h4>
                     <span>Gold medal winning mead and ciders</span><br>
                     <span>Newburyport, MA</span>
                 </div>
             </div>
-        </div>
+        </main>
+
         <footer>
             Copyright &copy; 2022 Park Street Produce
         </footer>
